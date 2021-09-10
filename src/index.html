@@ -17,9 +17,9 @@
       class="form"
       method="post"
     >
-      <section class="personal__information">
+      <fieldset class="personal__information">
 
-        <span class="section__title">Personal information</span>
+        <legend class="section__title">Personal information</legend>
 
         <label for="surname" class="form__label surname">
           Surname:
@@ -58,16 +58,15 @@
         <label for="birth_date" class="form__label birth_date">
           Full date of birth:
           <input
-            type="text"
+            type="date"
             name="bith_date"
             id="birth_date"
             class="input__field birth_date"
-            placeholder="mm/ dd/ yyyy"
           >
         </label>
 
         <label for="terms" class="form__label terms">
-          I accept the term of agreement
+          I accept the term of the agreement
           <input
             type="checkbox"
             name="terms"
@@ -75,11 +74,11 @@
             class="input__field terms"
           >
         </label>
-      </section>
+      </fieldset>
 
-      <section class="registration">
+      <fieldset class="registration">
 
-        <span class="section__title">Registration</span>
+        <legend class="section__title">Registration</legend>
 
         <label for="email" class="form__label email">
           E-mail:
@@ -88,6 +87,7 @@
           name="email"
           id="email"
           class="input__field email"
+          placeholder="email@example.com"
           >
         </label>
 
@@ -98,16 +98,15 @@
             name="password"
             id="password"
             class="input__field password"
-            placeholder="email@example.com"
           >
         </label>
-      </section>
+      </fieldset>
 
-      <section class="interesting__fact">
+      <fieldset class="interesting__fact">
 
-        <span class="section__title">An interesting fact about you!</span>
+        <legend class="section__title">An interesting fact about you!</legend>
 
-        <span for="cats" class="form__label cats">
+        <legend for="cats" class="form__label cats">
           Do you love cats?
           <input
           type="radio"
@@ -126,10 +125,10 @@
           value="no"
           >
           <label for="cats_no">No</label>
-        </span>
+        </legend>
 
         <label for="color" class="form__label color">
-          What is your favourite color?
+          What is your favorite color?
           <input
             type="color"
             name="color"
@@ -150,7 +149,7 @@
         </label>
 
         <label for="cars" class="form__label cars">
-          What are your favourite brand of cars?
+          What are your favorite brand of cars?
 
           <select
             name="cars"
@@ -176,11 +175,11 @@
             value="1"
           >
         </label>
-      </section>
+      </fieldset>
 
-      <section class="additional__info">
+      <fieldset class="additional__info">
 
-        <span class="section__title">Additional info:</span>
+        <legend class="section__title">Additional info:</legend>
 
         <label for="comments" class="form__label comments">
           Comments:
@@ -204,9 +203,9 @@
             <option value="no">no</option>
           </select>
         </label>
-      </section>
+      </fieldset>
 
-      <button type="submit" class="submit">Submit</button>
+      <button type="submit" id="button">Submit</button>
 
     </form>
   </body>
