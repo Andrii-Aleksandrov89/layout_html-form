@@ -1,26 +1,18 @@
 /* styles go here */
 body {
-  margin: 0;
-  padding: 10px;
+  margin: 8px;
 }
 
 .form__label {
   display: block;
-  padding: 0 0 10px 10px;
+  padding: 0 0 10px;
 }
 
-section {
-  border: 1px solid black;
-  margin-bottom: 2em;
+.form__label:last-child {
+  margin-bottom: 0;
 }
 
-.section__title {
-  position: relative;
-  bottom: 10px;
-  left: 10px;
-  background-color: white;
-}
-
-.input__field.age {
-  width: 40px;
+.fields {
+  padding-bottom: 0;
+  margin-bottom: 20px;
 }
