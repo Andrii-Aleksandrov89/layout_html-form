@@ -11,7 +11,205 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>HTML Form</h1> -->
     <script type="text/javascript" src="./main.js"></script>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      class="form"
+      method="post"
+    >
+      <section class="personal__information">
+
+        <span class="section__title">Personal information</span>
+
+        <label for="surname" class="form__label surname">
+          Surname:
+          <input
+          type="text"
+          name="surname"
+          id="surname"
+          class="input__field surname"
+          required
+          >
+        </label>
+
+        <label for="name" class="form__label name">
+          Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input__field name"
+          >
+        </label>
+
+        <label for="age" class="form__label age">
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            id="age"
+            class="input__field age"
+            value="12"
+            min="1"
+            max="200"
+          >
+        </label>
+
+        <label for="birth_date" class="form__label birth_date">
+          Full date of birth:
+          <input
+            type="text"
+            name="bith_date"
+            id="birth_date"
+            class="input__field birth_date"
+            placeholder="mm/ dd/ yyyy"
+          >
+        </label>
+
+        <label for="terms" class="form__label terms">
+          I accept the term of agreement
+          <input
+            type="checkbox"
+            name="terms"
+            id="terms"
+            class="input__field terms"
+          >
+        </label>
+      </section>
+
+      <section class="registration">
+
+        <span class="section__title">Registration</span>
+
+        <label for="email" class="form__label email">
+          E-mail:
+          <input
+          type="email"
+          name="email"
+          id="email"
+          class="input__field email"
+          >
+        </label>
+
+        <label for="password" class="form__label password">
+          Password:
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="input__field password"
+            placeholder="email@example.com"
+          >
+        </label>
+      </section>
+
+      <section class="interesting__fact">
+
+        <span class="section__title">An interesting fact about you!</span>
+
+        <span for="cats" class="form__label cats">
+          Do you love cats?
+          <input
+          type="radio"
+          id="cats_yes"
+          name="cats"
+          class="input__field cats"
+          value="yes"
+          >
+          <label for="cats_yes">Yes</label>
+
+          <input
+          type="radio"
+          id="cats_no"
+          name="cats"
+          class="input__field cats"
+          value="no"
+          >
+          <label for="cats_no">No</label>
+        </span>
+
+        <label for="color" class="form__label color">
+          What is your favourite color?
+          <input
+            type="color"
+            name="color"
+            id="color"
+            class="input__field color"
+          >
+        </label>
+
+        <label for="bedtime" class="form__label bedtime">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="bedtime"
+            id="bedtime"
+            class="input__field bedtime"
+            step="2"
+          >
+        </label>
+
+        <label for="cars" class="form__label cars">
+          What are your favourite brand of cars?
+
+          <select
+            name="cars"
+            id="cars"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <!-- <option value="VW">Volskwagen</option> -->
+          </select>
+        </label>
+
+        <label for="work" class="form__label work">
+          How do you rate our work?
+          <input
+            type="range"
+            name="work"
+            id="work"
+            class="input__field work"
+            min="1"
+            max="10"
+            step="1"
+            value="1"
+          >
+        </label>
+      </section>
+
+      <section class="additional__info">
+
+        <span class="section__title">Additional info:</span>
+
+        <label for="comments" class="form__label comments">
+          Comments:
+          <textarea
+          type="text"
+          name="comments"
+          id="comments"
+          class="textarea comments"
+          >
+          </textarea>
+        </label>
+
+        <label for="recommend" class="form__label recommend">
+          Would you recommend us?
+          <select
+            name="recommend"
+            class="recommend"
+            id="recommend"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </section>
+
+      <button type="submit" class="submit">Submit</button>
+
+    </form>
   </body>
 </html>
